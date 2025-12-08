@@ -1,0 +1,8 @@
+===== FACTURE =====
+ID Reservation : 2
+Client : Startup El Medina
+Salle : Venus
+Date : 10/12/2025
+Heure : 10:00 - 12:00
+Duree : 2 h 0 min
+Montant : 36,00 TND

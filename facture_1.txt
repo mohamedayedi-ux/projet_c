@@ -1,0 +1,8 @@
+===== FACTURE =====
+ID Reservation : 1
+Client : Entreprise SAHARA TECH
+Salle : Terre
+Date : 10/12/2025
+Heure : 09:00 - 11:00
+Duree : 2 h 0 min
+Montant : 50,00 TND
