@@ -11,12 +11,6 @@ Ce projet consiste à développer une application en *C* permettant de gérer de
 ## 📑 Sommaire
 1. [Fonctionnalités](#-fonctionnalités)
 2. [Structure du Projet](#-structure-du-projet)
-3. [Compilation](#️-compilation)
-4. [Exemple d’Exécution](#-exemple-dexécution)
-5. [Détails Techniques](#-détails-techniques)
-6. [Auteurs](#-auteurs)
-   
-
 ---
 
 ## 🚀 Fonctionnalités
@@ -42,8 +36,9 @@ Ce projet consiste à développer une application en *C* permettant de gérer de
 
 ### 🔄 Sauvegarde des données
 - Sauvegarde et lecture depuis fichiers texte/binaire :
-  - reservations.txt
-  - tarif.txt
+  - Reservations.txt
+  - Tarif.txt
+  - Facture_(nom facture).txt
 
 ---
 
