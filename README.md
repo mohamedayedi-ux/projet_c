@@ -4,7 +4,7 @@
 ![Language](https://img.shields.io/badge/Language-C-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey)
 
-Ce projet consiste à développer une application en *C* permettant de gérer des salles, leurs réservations, les conflits horaires, l’estimation des coûts, et la persistance des données via des fichiers.
+Ce projet consiste à développer une application en *C* permettant de gérer des *salles*, leurs *réservations*, les *conflits horaires*, l’**estimation des coûts**, et la *persistance des données* via des fichiers.
 
 ---
 
@@ -12,6 +12,10 @@ Ce projet consiste à développer une application en *C* permettant de gérer de
 1. [Fonctionnalités](#-fonctionnalités)
 2. [Structure du Projet](#-structure-du-projet)
 3. [Compilation](#️-compilation)
+4. [Exemple d’Exécution](#-exemple-dexécution)
+5. [Détails Techniques](#-détails-techniques)
+6. [Auteurs](#-auteurs)
+   
 
 ---
 
@@ -34,7 +38,7 @@ Ce projet consiste à développer une application en *C* permettant de gérer de
     
 - Détection des *conflits de créneaux*
 - Modification et suppression de réservation
-- Estimation *automatique du coût* de réservation
+- *Estimation automatique du coût* de réservation
 
 ### 🔄 Sauvegarde des données
 - Sauvegarde et lecture depuis fichiers texte/binaire :
@@ -48,14 +52,23 @@ Ce projet consiste à développer une application en *C* permettant de gérer de
 
 
 Projet/
-│── main.c
-│── salle.c
-│── salle.h
-│── reservation.c
-│── reservation.h
-│── fonctionsAux.c
-│── fonctionsAux.h
+│── Main.c
+│── Menu.c
+│── Menu.h
+│── GestionSalle.c
+│── GestionSalle.h
+│── Reservation.c
+│── Reservation.h
+│── FonctionsAux.c
+│── FonctionsAux.h
+│── Facture.c
+│── Facture.h
+│── Structures.c
+│── Structures.h
+│── Stats.c
+│── Stats.h
 │── data/
-│ ├── salles.txt
-│ ├── reservations.txt
+│ ├── Tarif.txt
+│ ├── Reservations.txt
+│ ├── Facture_(nom facture).txt
 │── README.md
