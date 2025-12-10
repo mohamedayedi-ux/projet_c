@@ -24,7 +24,7 @@ Ce projet consiste à développer une application en *C* permettant de gérer de
 ### 📅 Gestion des réservations
 - Ajouter une réservation avec :
   - nom du client
-  - - nombre de personnes
+  - nombre de personnes
   - date  
   - heure début
   - heure fin 
