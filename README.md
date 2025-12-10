@@ -11,6 +11,10 @@ Ce projet consiste à développer une application en *C* permettant de gérer de
 ## 📑 Sommaire
 1. [Fonctionnalités](#-fonctionnalités)
 2. [Structure du Projet](#-structure-du-projet)
+3. [Compilation](#️-compilation)
+4. [Exécution](#-exécution)
+5. [Détails Techniques](#-détails-techniques)
+6. [Auteurs](#-auteurs)
 ---
 
 ## 🚀 Fonctionnalités
@@ -67,3 +71,80 @@ Projet/
 │ ├── Reservations.txt
 │ ├── Facture_(nom facture).txt
 │── README.md
+
+---
+
+## 🖥️⚙️ Compilation
+
+ GCC.txt
+
+ ---
+
+## ▶️ Exécution
+
+ Systeme_de_Gestion_de_Reservations.exe
+
+ ---
+
+## 🔍 Détails techniques
+
+⚙️ Détails Techniques
+
+1. 🧱 Organisation des Données avec les struct C
+
+Les structures fondamentales définies dans Structures.h :
+
+- **Salle**
+Contient : nom, capacité, tarif horaire, équipements.
+- **Reservation**
+Contient : ID, nom client, salle (par valeur), date, heures début/fin, nombre de personnes, tarif, statut.
+
+Les structures sont stockées dans des tableaux globaux définis dans main.c, avec limites fixées par :
+MAX_SALLES et MAX_RES (Structures.h).
+
+2. 🏢 Gestion des Salles & Persistance
+
+- Les salles initiales sont créées dans main() via ajouterSalle().
+- Le fichier Tarif.txt assure la persistance, généré par creerFichierTarif() (GestionSalle.c).
+- La recherche d’une salle se fait avec trouverSalle().
+
+3. ⏱️ Détection des Conflits Horaires
+
+Gestion réalisée en trois étapes :
+
+ a) Conversion en minutes:
+heureEnMinutes() convertit "HH:MM" → minutes depuis minuit.
+ b) Vérification de chevauchement:
+chevauche(debut1, fin1, debut2, fin2) retourne 1 si :
+      (d1​<f2​)∧(d2​<f1​)     
+ c) Disponibilité finale
+salleDisponible() utilise chevauche() pour s’assurer qu’aucune réservation "confirmee" ou "modifiee" ne bloque l’horaire.
+
+4. 💰 Calcul du Tarif
+
+Effectué par calculTarif() (FonctionsAux.c).
+
+Formule utilisée :
+   Tarif Total=-(Heure_Fin−Heure_Debut​)/60)×Tarif_Horaire
+
+Contraintes horaires :
+- début ≥ 08:00 (480 min)
+- fin ≤ 23:59 (1439 min)
+- fin > début
+
+5. 📊 Statistiques & Rapports
+
+Module : Stats.c
+
+- Chiffre d’affaires par salle basé sur les réservations confirmées.
+- Réservations par mois : compterReservationsParMois(mois, annee)
+- Salles les plus populaires : afficherSallesPopulaires(mois, annee)
+
+ ---
+
+
+## 💡 Auteurs
+
+- Yasmine TRIKI
+- Mohamed AYEDI
+- Mohamed Louai DARGUECH
