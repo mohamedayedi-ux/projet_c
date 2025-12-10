@@ -38,7 +38,7 @@ Ce projet consiste à développer une application en *C* permettant de gérer de
 - Sauvegarde et lecture depuis fichiers texte/binaire :
   - Reservations.txt
   - Tarif.txt
-  - Facture_(nom facture).txt
+  - Facture_(id_facture).txt
 
 ---
 
