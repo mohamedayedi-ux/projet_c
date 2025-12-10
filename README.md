@@ -11,7 +11,7 @@ Ce projet consiste à développer une application en *C* permettant de gérer de
 ## 📑 Sommaire
 1. [Fonctionnalités](#-fonctionnalités)
 2. [Structure du Projet](#-structure-du-projet)
-3. [Compilation](#️-compilation)
+3. [Compilation](#-compilation)
 4. [Exécution](#-exécution)
 5. [Détails Techniques](#-détails-techniques)
 6. [Auteurs](#-auteurs)
